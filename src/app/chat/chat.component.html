@@ -1,0 +1,13 @@
+<div>
+    <h1 class="title">Chat Bot with GPT</h1>
+    <div class="chat_bot" id="chat_bot">
+        <div class="chat_bot_content-msg" id="chat_bot_content-msg">
+            <h2 class="chat_bot-msg">Bot :</h2>
+            <p class="chat_bot-msg">Bonjour, Je suis un bot codé en Angular et utilisant GPT3 d'Open AI</p>
+        </div>
+    </div>
+    <form class="form">
+        <input class="msg" id="msg" placeholder="Message" [(ngModel)]="newMsg">
+        <button class="btn" (click)="handleClick()">Envoyer</button>
+    </form>    
+</div>
