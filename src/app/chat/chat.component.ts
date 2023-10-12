@@ -11,10 +11,6 @@ export class ChatComponent {
 
   constructor() {}
 
-  handleChange() {
-    // Implement the handleChange function to update newMsg
-  }
-
   handleClick() {
     // Implement the handleClick function to handle button click
   }
