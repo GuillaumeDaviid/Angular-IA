@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-chat',
@@ -7,7 +6,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent {
-  newMsg: FormControl = new FormControl('');
+  newMsg: string = '';
 
   constructor() {}
 
