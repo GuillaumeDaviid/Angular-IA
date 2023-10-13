@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { OpenAiService } from '../open-ai.service'
 
 @Component({
   selector: 'app-chat',
@@ -7,11 +7,15 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent {
-  newMsg: FormControl = new FormControl('');
+  newMsg: string = '';
+  botResponse: string = '';
 
-  constructor() {}
+  constructor(private openAiService: OpenAiService) {}
 
   handleClick() {
-    // Implement the handleClick function to handle button click
+    this.openAiService.getDataFromOpenAI(this.newMsg).subscribe(data => {
+      this.botResponse = data;
+    });
+    this.newMsg = '';
   }
 }
