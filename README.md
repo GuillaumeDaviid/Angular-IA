@@ -1,5 +1,7 @@
 # ChatIA
 
+Retrouvez [l'article](https://guillaumedaavid.medium.com/cr%C3%A9ez-votre-propre-chatgpt-avec-angular-d94b474ebdc6) associé à ce projet sur medium.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
 ## Development server
